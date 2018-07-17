@@ -11,20 +11,19 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}" defer></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <style>
-        footer .fa-angle-up{
-            font-size: 35px;
-            margin-bottom: 20px;
-            color: MediumSeaGreen;
+        body{
+            background-color: #fff !important;
         }
         .navbar {
             margin-bottom: 0;
@@ -40,7 +39,9 @@
         .navbar li a, .navbar .navbar-brand {
             color: #fff !important;
         }
-        
+        .navbar-dark .navbar-nav .nav-link.active{
+            color: #46ff00 !important;
+        }
         .navbar-nav li a:hover, .navbar-nav li.active a {
             color: #46ff00 !important;           
            {{-- background-color: #fff !important; --}}            
@@ -49,6 +50,14 @@
         .navbar-dark .navbar-toggler {
             border-color: transparent;
             color: #fff !important;
+        }
+        .btn-primary:active {
+            background-color: #31905c !important; 
+            border-color: #fff !important;
+        }
+        .btn-primary:hover {
+            background-color: #38a568; 
+            border-color: #fff;
         }
         .btn-primary {
             background-color: MediumSeaGreen; 
@@ -61,10 +70,158 @@
             border-color: #3cb370;
             box-shadow: 0 0 0 0.2rem rgba(0, 255, 47, 0.25);
         }
+        .jumbotron { 
+            background-color: MediumSeaGreen; 
+            color: #ffffff;
+            padding: 100px 25px;    
+        }
+        footer .fa-angle-up{
+            font-size: 35px;
+            margin-bottom: 20px;
+            color: MediumSeaGreen;
+        }
+        .bg-grey {
+            background-color: #f6f6f6;
+        }
+        .container-fluid {
+            padding: 60px 50px;
+        }
+        .logo-small {
+            color: MediumSeaGreen;
+            font-size: 50px;
+        }
+        .logo {
+            color: MediumSeaGreen;
+            font-size: 200px;
+        }
+        @media screen and (max-width: 768px) {
+            .col-sm-4 {
+                text-align: center;
+                margin: 25px 0;
+            }
+        }
+        .thumbnail {
+            padding: 0 0 15px 0;
+            border: none;
+            border-radius: 0;
+        }
+        
+        .card-body img {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 10px;
+        }
+        .carousel-control-next, .carousel-control-prev {
+            background-image: none;
+            color: #52b32b;
+        }
+        .carousel-control-prev:hover, .carousel-control-next:hover {
+            color: MediumSeaGreen;
+        }
+        .carousel-control-prev:focus, .carousel-control-next:focus {
+            color: #2c8855;
+        }
+        .carousel-indicators li {
+            background-color: #dcffd9;
+        }        
+        .carousel-indicators li.active {
+            background-color: MediumSeaGreen;
+        }        
+        .carousel-item h4 {
+            font-size: 19px;
+            line-height: 1.375em;
+            font-weight: 400;
+            font-style: italic;
+            margin: 70px 0;
+        }        
+        .carousel-item span {
+            font-style: normal;
+        }
+        .fa-angle-right, .fa-angle-left{
+            font-size: 35px;    
+        }
+        .card {
+            border: 1px solid MediumSeaGreen; 
+            border-radius:0;
+            transition: box-shadow 0.5s;
+        }
+        
+        .card:hover {
+            box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+        }
+        
+        .card-footer .btn:hover {
+            border: 1px solid MediumSeaGreen;
+            background-color: #fff !important;
+            color: MediumSeaGreen;
+        }
+        
+        .card-header {
+            color: #fff !important;
+            background-color: MediumSeaGreen !important;
+            padding: 25px;
+            border-bottom: 1px solid transparent;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+        
+        .card-footer {
+            background-color: #fff !important;
+        }
+        
+        .card-footer h3 {
+            font-size: 32px;
+        }
+        
+        .card-footer h4 {
+            color: #aaa;
+            font-size: 14px;
+        }
+        
+        .card-footer .btn {
+            margin: 15px 0;
+            background-color: MediumSeaGreen;
+            color: #fff;
+        }
+        .slideanim {visibility:hidden;}
+        .slide {
+            /* The name of the animation */
+            animation-name: slide;
+            -webkit-animation-name: slide; 
+            /* The duration of the animation */
+            animation-duration: 1s; 
+            -webkit-animation-duration: 1s;
+            /* Make the element visible */
+            visibility: visible; 
+        }
+
+        /* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+        @keyframes slide {
+            0% {
+                opacity: 0;
+                transform: translateY(70%);
+            } 
+            100% {
+                opacity: 1;
+                transform: translateY(0%);
+            } 
+        }
+        @-webkit-keyframes slide {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(70%);
+            } 
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+            }
+        }
     </style>
       
 </head>
-<body>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
     <div id="app">
         {{-- <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
@@ -117,7 +274,7 @@
          comment --}}
          <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-md">
             <div class="container">
-                <a class="navbar-brand" href="#">Logo</a>
+                <a class="navbar-brand" href="{{ url('/') }}">Logo</a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
                         <span class="navbar-toggler-icon"></span>
                  </button> 
@@ -162,10 +319,46 @@
             @yield('content')
         </main>   
         <footer class="container-fluid text-center">
-            <a href="#myPage" title="To Top">
+            <a href="#myPage" title="Para o Topo">
               <span class="fa fa-angle-up"></span>
             </a>
-        </footer>    
+            <p>Todos os direitos reservados.</p>
+        </footer>
+        <script>
+            $(document).ready(function(){
+              // Add smooth scrolling to all links in navbar + footer link
+              $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== ""){
+                  // Prevent default anchor click behavior
+                  event.preventDefault();
+            
+                  // Store hash
+                  var hash = this.hash;
+            
+                  // Using jQuery's animate() method to add smooth page scroll
+                  // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 900, function(){
+               
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  });
+                } // End if
+              });
+              $(window).scroll(function() {
+                $(".slideanim").each(function(){
+                  var pos = $(this).offset().top;
+              
+                  var winTop = $(window).scrollTop();
+                  if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                  }
+                });
+              });
+            })
+            </script>    
     </div>
     
 </body>
