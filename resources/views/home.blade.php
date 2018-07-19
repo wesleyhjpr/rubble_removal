@@ -1,20 +1,21 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="jumbotron text-center">
-    <h1>Company</h1> 
-    <p>We specialize in blablabla</p> 
+<div class="jumbotron text-center bg-grey">
+    <img class="img-responsive" src="{{ asset('logo.svg') }}" alt="CTA Bagulhos" style="width: 216px; height: 206px;">
+    <h1>Pinheiros entulhos<br> cata bagulho e móveis</h1> 
 </div>
 <div id="about" class="container-fluid">
     <div class="row">
         <div class="col-sm-8">
-        <h2>Sobre a página da empresa</h2>
-        <h4>Lorem ipsum..</h4> 
-        <p>Lorem ipsum..</p>
-        <button class="btn btn-default btn-lg">Get in Touch</button>
+            <h2>Sobre a página da empresa</h2>
+            <h5>Bem-vindo aos serviços da CTA Bagulhos! Somos uma empresa de remoção de entulho e sucata premium e com boa relação custo-benefício. Não há nada que não possamos cuidar de nossos clientes.</h5> 
+            {{-- <p>Lorem ipsum..</p>
+            <button class="btn btn-default btn-lg">Get in Touch</button>
+            --}}
         </div>
         <div class="col-sm-4">
-        <span class="fas fa-signal logo slideanim"></span>
+            <span class="fas fa-hand-holding-usd logo"></span>
         </div>
     </div>
 </div>
@@ -22,12 +23,11 @@
 <div class="container-fluid bg-grey">
     <div class="row">
         <div class="col-sm-4">
-        <span class="fas fa-globe-americas logo slideanim"></span> 
+            <span class="fas fa-recycle logo slideanim"></span> 
         </div>
         <div class="col-sm-8">
-        <h2>Nossos Valores</h2>
-        <h4><strong>MISSÃO:</strong> Nossa missão lorem ipsum..</h4> 
-        <p><strong>VISÃO:</strong> Nossa visão Lorem ipsum..</p>
+            <h2>Removendo seus entulhos do jeito certo</h2>
+            <h5>Nossa equipe de especialistas que cuida dos nossos serviços de remoção de entulho é a solução perfeita para garantir que qualquer tipo de entulho seja descartado de acordo com as diretrizes recomendadas pela legislação. Nós sempre entregamos seus resíduos em locais de despejos legais e de acordo com as leis antidumping. Recolhemos todas as formas de construção e entulho de edifícios, resíduos de jardim, resíduos comerciais e domésticos, bem como todos os resíduos domésticos e móveis. </h5> 
         </div>
     </div>
 </div>
@@ -73,9 +73,9 @@
   </div>
 </div>
 <div id="portfolio" class="container-fluid text-center bg-grey">
-        <h2>Portfolio</h2>
-        <h4>O que nós criamos</h4>
-        <br>
+    <h2>Portfolio</h2>
+    <h4>O que nós criamos</h4>
+    <br>
     <div class="row text-center slideanim">
         <div class="col-md-4">
             <div class="card card-body">
@@ -116,7 +116,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
-    <h4>"Essa empresa é a melhor. Eu estou muito satisfeito com o resultado!"<br><span style="font-style:normal;">Michael Roe, Vice President, Comment Box</span></h4>
+        <h4>"Essa empresa é a melhor. Eu estou muito satisfeito com o resultado!"<br><span style="font-style:normal;">Michael Roe, Vice President, Comment Box</span></h4>
     </div>
     <div class="carousel-item">
       <h4>"Uma única palavra... WOW!!"<br><span style="font-style:normal;">John Doe, Salesman, Rep Inc</span></h4>
@@ -142,61 +142,61 @@
     </div>
     <div class="row slideanim">
         <div class="col-sm-4">
-        <div class="card text-center">
-            <div class="card-header">
-            <h1>Basic</h1>
-            </div>
-            <div class="card-body">
-            <p><strong>20</strong> Lorem</p>
-            <p><strong>15</strong> Ipsum</p>
-            <p><strong>5</strong> Dolor</p>
-            <p><strong>2</strong> Sit</p>
-            <p><strong>Endless</strong> Amet</p>
-            </div>
-            <div class="card-footer">
-            <h3>R$19</h3>
-            <h4>por mês</h4>
-            <button class="btn btn-lg">Saiba mais.</button>
-            </div>
-        </div> 
-        </div> 
-        <div class="col-sm-4">
-        <div class="card  text-center">
-            <div class="card-header">
-            <h1>Pro</h1>
-            </div>
-            <div class="card-body">
-            <p><strong>50</strong> Lorem</p>
-            <p><strong>25</strong> Ipsum</p>
-            <p><strong>10</strong> Dolor</p>
-            <p><strong>5</strong> Sit</p>
-            <p><strong>Endless</strong> Amet</p>
-            </div>
-            <div class="card-footer">
-            <h3>R$29</h3>
-            <h4>por mês</h4>
-            <button class="btn btn-lg">Saiba mais.</button>
-            </div>
-        </div> 
+            <div class="card text-center">
+                <div class="card-header">
+                    <h1>Basic</h1>
+                </div>
+                <div class="card-body">
+                    <p><strong>20</strong> Lorem</p>
+                    <p><strong>15</strong> Ipsum</p>
+                    <p><strong>5</strong> Dolor</p>
+                    <p><strong>2</strong> Sit</p>
+                    <p><strong>Endless</strong> Amet</p>
+                </div>
+                <div class="card-footer">
+                    <h3>R$19</h3>
+                    <h4>por mês</h4>
+                    <button class="btn btn-lg">Saiba mais.</button>
+                </div>
+            </div> 
         </div> 
         <div class="col-sm-4">
-        <div class="card text-center">
-            <div class="card-header">
-            <h1>Premium</h1>
-            </div>
-            <div class="card-body">
-            <p><strong>100</strong> Lorem</p>
-            <p><strong>50</strong> Ipsum</p>
-            <p><strong>25</strong> Dolor</p>
-            <p><strong>10</strong> Sit</p>
-            <p><strong>Endless</strong> Amet</p>
-            </div>
-            <div class="card-footer">
-            <h3>R$49</h3>
-            <h4>por mês</h4>
-            <button class="btn btn-lg">Saiba mais.</button>
-            </div>
+            <div class="card  text-center">
+                <div class="card-header">
+                    <h1>Pro</h1>
+                </div>
+                <div class="card-body">
+                    <p><strong>50</strong> Lorem</p>
+                    <p><strong>25</strong> Ipsum</p>
+                    <p><strong>10</strong> Dolor</p>
+                    <p><strong>5</strong> Sit</p>
+                    <p><strong>Endless</strong> Amet</p>
+                </div>
+                <div class="card-footer">
+                    <h3>R$29</h3>
+                    <h4>por mês</h4>
+                    <button class="btn btn-lg">Saiba mais.</button>
+                </div>
+            </div> 
         </div> 
+        <div class="col-sm-4">
+            <div class="card text-center">
+                <div class="card-header">
+                    <h1>Premium</h1>
+                </div>
+                <div class="card-body">
+                    <p><strong>100</strong> Lorem</p>
+                    <p><strong>50</strong> Ipsum</p>
+                    <p><strong>25</strong> Dolor</p>
+                    <p><strong>10</strong> Sit</p>
+                    <p><strong>Endless</strong> Amet</p>
+                </div>
+                <div class="card-footer">
+                    <h3>R$49</h3>
+                    <h4>por mês</h4>
+                    <button class="btn btn-lg">Saiba mais.</button>
+                </div>
+            </div> 
         </div> 
     </div>
 </div>
@@ -205,26 +205,26 @@
     <h2 class="text-center">CONTATO</h2>
     <div class="row">
         <div class="col-sm-5">
-        <p>Contacte-nos e vamos retornar para você dentro de 24 horas.</p>
-        <p><span class="fas fa-map-marker-alt"></span> R. Paulo Gontijo de Carvalho, 452 - Cerqueira César, São Paulo - SP, 05404-020</p>
-        <p><span class="fas fa-mobile-alt"></span> 11 96120 0106<br>&nbsp;&nbsp; 95215 5204</p>
-        <p><span class="fas fa-envelope"></span> pinheirosentulhos@gmail.com</p> 
+            <p>Contacte-nos e vamos retornar para você dentro de 24 horas.</p>
+            <p><span class="fas fa-map-marked-alt"></span> R. Paulo Gontijo de Carvalho, 452 - Cerqueira César, São Paulo - SP, 05404-020</p>
+            <p><span class="fas fa-mobile-alt"></span> 11 96120 0106 | 95215 5204</p>
+            <p><span class="fas fa-envelope"></span> pinheirosentulhos@gmail.com</p> 
         </div>
         <div class="col-sm-7 slideanim">
-        <div class="row">
-            <div class="col-sm-6 form-group">
-            <input class="form-control" id="name" name="name" placeholder="Nome" type="text" required>
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Nome" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
             </div>
-            <div class="col-sm-6 form-group">
-            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-            </div>
-        </div>
-        <textarea class="form-control" id="comments" name="comments" placeholder="Comentário" rows="5"></textarea><br>
-        <div class="row">
-            <div class="col-sm-12 form-group">
-            <button class="btn btn-default pull-right" type="submit">Enviar</button>
-            </div>
-        </div> 
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comentário" rows="5"></textarea><br>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <button class="btn btn-default pull-right" type="submit">Enviar</button>
+                </div>
+            </div> 
         </div>
     </div>
 </div>
@@ -232,9 +232,10 @@
     <script>
         // Initialize and add the map
         function initMap() {
-          // The location of Uluru
-          var pinheirosLoc = {lat: -23.5628873, lng: -46.6840374};
-          // The map, centered at Uluru
+          // The location of Pinheiros
+          -23.5605453, -46.6798854
+          var pinheirosLoc = {lat: -23.5605453, lng: -46.6798854};
+          // The map, centered at Pinheiros
           var map = new google.maps.Map(
               document.getElementById('map'), {
                 zoom: 15, 

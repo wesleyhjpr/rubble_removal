@@ -8,7 +8,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Pinheiros entulhos e móveis velhos') }}</title>
+    <link rel="icon" href="{{ asset('logo.png') }}">
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>    
@@ -39,11 +40,8 @@
         .navbar li a, .navbar .navbar-brand {
             color: #fff !important;
         }
-        .navbar-dark .navbar-nav .nav-link.active{
-            color: #46ff00 !important;
-        }
-        .navbar-nav li a:hover, .navbar-nav li.active a {
-            color: #46ff00 !important;           
+        .navbar-nav li a:hover, .navbar-nav li.active a, .navbar-dark .navbar-nav .nav-link.active {
+            color: hsla(0,0%,100%,.5) !important;          
            {{-- background-color: #fff !important; --}}            
         }
         
@@ -71,9 +69,8 @@
             box-shadow: 0 0 0 0.2rem rgba(0, 255, 47, 0.25);
         }
         .jumbotron { 
-            background-color: MediumSeaGreen; 
-            color: #ffffff;
-            padding: 100px 25px;    
+            color: #000;
+           {{--  padding: 100px 25px; --}}    
         }
         footer .fa-angle-up{
             font-size: 35px;
@@ -218,10 +215,24 @@
                 -webkit-transform: translateY(0%);
             }
         }
+        @media screen and (max-width: 768px) {
+            .col-sm-4 {
+              text-align: center;
+              margin: 25px 0;
+            }
+            .btn-lg {
+                width: 100%;
+                margin-bottom: 35px;
+            }
+          }
+          @media screen and (max-width: 480px) {
+            .logo {
+                font-size: 150px;
+            }
+          }
     </style>
-      
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60"> 
     <div id="app">
         {{-- <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
@@ -274,21 +285,21 @@
          comment --}}
          <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-md">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">Logo</a>
+                <a class="navbar-brand" href={{Request::is('login')? '/' : '#myPage'}}><img src="{{ asset('logo_1.svg') }}" alt="CTA Bagulhos" style=" height: 28px;"></a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
                         <span class="navbar-toggler-icon"></span>
                  </button> 
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a href="#about" class="nav-link">ABOUT</a></li>
-                        <li class="nav-item"><a href="#services" class="nav-link">SERVICES</a></li>
-                        <li class="nav-item"><a href="#portfolio" class="nav-link">PORTFOLIO</a></li>
-                        <li class="nav-item"><a href="#pricing" class="nav-link">PRICING</a></li>
-                        <li class="nav-item"><a href="#contact" class="nav-link">CONTACT</a></li>
+                        <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href={{Request::is('login')? '/#about' : '#about'}} class="nav-link">ABOUT</a></li>
+                        <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href={{Request::is('login')? '/#services' : '#services'}} class="nav-link">SERVICES</a></li>
+                        <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href={{Request::is('login')? '/#portfolio' : '#portfolio'}} class="nav-link">PORTFOLIO</a></li>
+                        <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href={{Request::is('login')? '/#pricing' : '#pricing'}} class="nav-link">PRICING</a></li>
+                        <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href={{Request::is('login')? '/#contact' : '#contact'}} class="nav-link">CONTACT</a></li>
                         <!-- Authentication Links -->
                         @guest
-                            <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
+                            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
                             {{--
                             <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">{{ __('Register') }}</a></li>
                             --}}
@@ -300,8 +311,7 @@
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                       onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
 
@@ -325,40 +335,60 @@
             <p>Todos os direitos reservados.</p>
         </footer>
         <script>
-            $(document).ready(function(){
-              // Add smooth scrolling to all links in navbar + footer link
-              $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== ""){
-                  // Prevent default anchor click behavior
-                  event.preventDefault();
-            
-                  // Store hash
-                  var hash = this.hash;
-            
-                  // Using jQuery's animate() method to add smooth page scroll
-                  // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-                  $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                  }, 900, function(){
-               
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                  });
-                } // End if
-              });
-              $(window).scroll(function() {
+            function slideLogo(){
                 $(".slideanim").each(function(){
-                  var pos = $(this).offset().top;
-              
-                  var winTop = $(window).scrollTop();
-                  if (pos < winTop + 600) {
-                    $(this).addClass("slide");
-                  }
+                    var pos = $(this).offset().top;
+                    
+                    var winTop = $(window).scrollTop();
+                    if (pos < winTop + 600) {
+                        $(this).addClass("slide");
+                    }
                 });
-              });
-            })
-            </script>    
+            }
+            @if (!Request::is('login'))
+            $('.navbar-brand img').hide(); 
+            $(document).scroll(function () {
+                var y = $(this).scrollTop();
+                console.log("position: ", y);
+                if(y < 376){
+                    $('.navbar-brand img').hide();
+                }
+                if(y > 377){
+                    $('.navbar-brand img').show();
+                }else if(y > 332){
+                    $('.navbar-brand img').show();
+                }
+            });
+                $(document).ready(function(){                         
+                    // Add smooth scrolling to all links in navbar + footer link                    
+                    $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+                        // Make sure this.hash has a value before overriding default behavior
+                        if (this.hash !== ""){
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+                    
+                        // Store hash
+                        var hash = this.hash;
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 900, function(){
+                    
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                        } // End if
+                    });
+                    if(window.location.hash){
+                        slideLogo();
+                    }                  
+                    $(window).scroll(function() {
+                        slideLogo();
+                    });
+                    })
+                @endif
+        </script>    
     </div>
     
 </body>
