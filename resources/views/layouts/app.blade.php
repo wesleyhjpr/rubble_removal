@@ -285,7 +285,9 @@
          comment --}}
          <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-md">
             <div class="container">
-                <a class="navbar-brand" href={{Request::is('login')? '/' : '#myPage'}}><img src="{{ asset('logo_1.svg') }}" alt="CTA Bagulhos" style=" height: 28px;"></a>
+                <a class="navbar-brand" style="padding-bottom: 0px; padding-top: 0px;"href={{Request::is('login')? '/' : '#myPage'}}>
+                    <img src="{{ asset('logo_1.svg') }}" alt="CTA Bagulhos" style=" height: 33px;">
+                </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
                         <span class="navbar-toggler-icon"></span>
                  </button> 
