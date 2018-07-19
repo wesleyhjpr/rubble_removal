@@ -135,8 +135,8 @@
   </a>
 </div>
 
-<div id="pricing" class="container-fluid">
-    <div class="text-center">
+<div id="termo-de-contrato" class="container-fluid">
+    {{-- <div class="text-center">
         <h2>Preços</h2>
         <h4>Escolha um plano de pagamento que funcione para você</h4>
     </div>
@@ -198,6 +198,105 @@
                 </div>
             </div> 
         </div> 
+    </div> --}}
+    <h2 class="text-center"><strong>Termo de prestação de serviços<strong></h2>
+    <br>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#menu0">Para contratação</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu1">Formato de trabalho</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu2">Remoção de material fracionado</a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu3">Atendimento</a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu4">Preço dos serviços</a>
+        </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div id="menu0" class="container tab-pane active"><br>
+            <h3>Para contratação Informe:</h3>
+            <p>Nome completo ou Razão Social
+                <br>Cpf ou CNPJ
+                <br>Endereço com cep
+                <br>Telefone do contato, celular
+                <br>Telefone da pessoa na obra
+                <br>Quantidade estimada
+                <br>Data de agendamento
+            </p>
+        </div>
+        <div id="menu1" class="container tab-pane fade"><br>
+            <h3>Formato de trabalho:</h3>
+            <p>Remoção   
+                <br>A remoção de materiais através de sacos tem como objetivo a inspeção e classificação dos materiais.
+                <br>Classificamos os materiais em 4 tipos principais, entulho limpo, recicláveis, inservíveis e poluentes, damos assim destino correto dos materiais visando a manutenção e prevenção ao meio ambiente.
+                <br>Não retiramos lixo orgânico, hospitalar, resíduos industriais e etc.
+                <br>Sacos de entulhos que estiverem contaminados com resto de comida também não serão removidos.
+            </p>
+        </div>
+        <div id="menu2" class="container tab-pane fade"><br>
+            <h3>Remoção de material fracionado:</h3>
+            <p>
+                Todo material fracionado ou de pequeno porte deve estar acondicionado em sacos de rafia (sacos brancos de polipropileno); esse tipo de saco é encontrado em depósito de materiais de construção e padarias, é a mesma embalagem de farinha de trigo, estes sacos tem aproximadamente 75 litros.
+                <br>Não removemos materiais em sacos de lixo preto ou de pouca resistência.                    
+                <br>Peso e acondicionamento dos sacos;                    
+                <br>Tendo como objetivo atender as normas técnicas de segurança do trabalho. Os sacos devem ter no máximo 30 kg.
+                <br>Nossas equipes estão equipadas com balanças e pesarão os sacos na hora da remoção.
+                <br>Caso não tenha balança acondicione os materiais da seguinte maneira: 
+                <br>    
+                <br>Alvenaria (resto de pisos, paredes, azulejos)&emsp;&emsp;&emsp;&emsp;- Sacos pela metade.                    
+                <br>Madeira, plásticos, papelão, volumosos etc.&emsp;&emsp;&emsp;&emsp;- Sacos cheios                    
+                <br>Terra, pedra, areia                        &emsp;&emsp;&emsp;&emsp;- Sacos menos que a metade                    
+                <br>Gesso                                      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;- Sacos quase cheios.
+                <br>    
+                <br>Os sacos não devem ser fechados, amarrados e não podem estar danificados (rasgados ou com furos).
+                <br>    
+                <br>Caso você cliente não tenha acondicionado desta maneira, temos duas soluções para a remoção:
+                <br>Os materiais maiores que o saco, serão removidos inteiros, e cobrado o valor proporcional ao seu volume a sacos de entulhos; ex. tábua de 2,00 m por 20 cm igual a 1 saco, porta de 2,10 X 0,80 = 2 sacos.
+                <br>
+                <br>Opção 1 - Cobrar o dobro do valor do saco e estes não podem passar de 45 kg.
+                Opção 2 - Retiramos o excesso de peso do saco e acondicionamos em um novo saco cobrando pelo novo saco mais o ensacamento.
+            </p>
+        </div>
+        <div id="menu3" class="container tab-pane fade"><br>
+            <h3>Atendimento:</h3>
+            <p>
+                Ligamos entre 30 minutos a 1 hora antes de nos deslocarmos para o cliente, evitando que você fique preso no local aguardando nossa equipe.
+                <br>Nossas equipes saem do Butantã e nosso expediente começa às 8:00 da manhã.
+                <br>Para melhor aproveitamento do dia, trabalhamos com roteiro, não tendo possibilidade de marcamos hora. 
+                <br>Caso necessite de um horário aproximado, informamos a ordem de atendimento logo de manhã (é só ligar) estimamos o horário que nossa equipe deve estar no local, mas nunca marcamos hora devido oscilação do trânsito e atendimento de cada cliente.
+            </p>
+        </div>
+        <div id="menu4" class="container tab-pane fade"><br>
+            <h3>Preço dos serviços:</h3>
+            <p>
+                Serviço mínimo no térreo até 20 m sem obstáculo (10 sacos ou equivalente).&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;- R$ 110,00
+                <br>Serviço mínimo em apto com elevador e o nosso veículo parando próximo do elevador&emsp;&emsp;&emsp;&emsp;- R$ 140,00
+                <br>
+                <br>Taxa de deslocamento do veículo (contratação) até 49 sacos &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;- R$ 40,00
+                <br>Obs: Nos múltiplos de 50 sacos não será cobrada a taxa de deslocamento
+                <br>
+                <br>
+                <br>Remoção de sacos de entulho ensacados pelo cliente preço por saco
+                <br>
+                <br>Remoção com deslocamento até 15 m sem obstáculos (escada, rampa e etc.)
+                <br>de 1 a 15 sacos                                                           &emsp;&emsp;&emsp;&emsp;&emsp;- R$ 6,00
+                <br>de 16 a 35 sacos                                                          &emsp;&emsp;&emsp;&emsp;- R$ 5,00
+                <br>de 36 a 50 sacos                                                          &emsp;&emsp;&emsp;&emsp;- R$ 4,00 
+                <br>
+                <br>Preços a acrescentar a remoção:
+                <br>
+                Material Poluentes (classe 3, causam mau a saúde) acrescentar a remoção
+            </p>
+        </div>
     </div>
 </div>
 
@@ -446,7 +545,7 @@
                 ]
                 
             });
-          // The marker, positioned at Uluru
+          // The marker, positioned at Pinheiros
           var marker = new google.maps.Marker({position: pinheirosLoc, map: map});
         }
     </script>

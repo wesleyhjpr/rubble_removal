@@ -294,11 +294,11 @@
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href={{Request::is('login')? '/#about' : '#about'}} class="nav-link">ABOUT</a></li>
-                        <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href={{Request::is('login')? '/#services' : '#services'}} class="nav-link">SERVICES</a></li>
+                        <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href={{Request::is('login')? '/#about' : '#about'}} class="nav-link">SOBRE</a></li>
+                        <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href={{Request::is('login')? '/#services' : '#services'}} class="nav-link">SERVIÇOS</a></li>
                         <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href={{Request::is('login')? '/#portfolio' : '#portfolio'}} class="nav-link">PORTFOLIO</a></li>
-                        <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href={{Request::is('login')? '/#pricing' : '#pricing'}} class="nav-link">PRICING</a></li>
-                        <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href={{Request::is('login')? '/#contact' : '#contact'}} class="nav-link">CONTACT</a></li>
+                        <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href={{Request::is('login')? '/#termo-de-contrato' : '#termo-de-contrato'}} class="nav-link">TERMO DE CONTRATO</a></li>
+                        <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href={{Request::is('login')? '/#contact' : '#contact'}} class="nav-link">CONTATO</a></li>
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
