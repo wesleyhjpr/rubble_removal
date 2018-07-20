@@ -86,6 +86,7 @@
         .logo-small {
             color: MediumSeaGreen;
             font-size: 50px;
+            padding-bottom: 10px;
         }
         .logo {
             color: MediumSeaGreen;
@@ -193,6 +194,19 @@
             /* Make the element visible */
             visibility: visible; 
         }
+        .zoom {
+            transition: transform .2s; /* Animation */
+        }        
+        .zoom:hover {
+            transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+            padding-right: 25px;
+            padding-left: 25px;
+        }
+        .vl {
+            border-color: MediumSeaGreen;
+            height: 1px;
+            margin-bottom: 0px;
+        }
 
         /* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
         @keyframes slide {
@@ -229,6 +243,12 @@
             .logo {
                 font-size: 150px;
             }
+          }
+          .nav-item a {
+            color: #3cb370;
+          }
+          .nav-item a:hover{
+            color: #2f8c57;
           }
     </style>
 </head>

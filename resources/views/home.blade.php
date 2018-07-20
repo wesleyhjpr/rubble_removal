@@ -9,7 +9,7 @@
     <div class="row">
         <div class="col-sm-8">
             <h2>Sobre a página da empresa</h2>
-            <h5>Bem-vindo aos serviços da CTA Bagulhos! Somos uma empresa de remoção de entulho e sucata premium e com boa relação custo-benefício. Não há nada que não possamos cuidar de nossos clientes.</h5> 
+            <p>Bem-vindo aos serviços da CTA Bagulhos! Somos uma empresa de remoção de entulho e sucata premium e com boa relação custo-benefício. Não há nada que não possamos cuidar de nossos clientes.</p> 
             {{-- <p>Lorem ipsum..</p>
             <button class="btn btn-default btn-lg">Get in Touch</button>
             --}}
@@ -27,7 +27,7 @@
         </div>
         <div class="col-sm-8">
             <h2>Removendo seus entulhos do jeito certo</h2>
-            <h5>Nossa equipe de especialistas que cuida dos nossos serviços de remoção de entulho é a solução perfeita para garantir que qualquer tipo de entulho seja descartado de acordo com as diretrizes recomendadas pela legislação. Nós sempre entregamos seus resíduos em locais de despejos legais e de acordo com as leis antidumping. Recolhemos todas as formas de construção e entulho de edifícios, resíduos de jardim, resíduos comerciais e domésticos, bem como todos os resíduos domésticos e móveis. </h5> 
+            <p>Nossa equipe de especialistas que cuida dos nossos serviços de remoção de entulho é a solução perfeita para garantir que qualquer tipo de entulho seja descartado de acordo com as diretrizes recomendadas pela legislação. Nós sempre entregamos seus resíduos em locais de despejos legais e de acordo com as leis antidumping. Recolhemos todas as formas de construção e entulho de edifícios, resíduos de jardim, resíduos comerciais e domésticos, bem como todos os resíduos domésticos e móveis. </p> 
         </div>
     </div>
 </div>
@@ -37,38 +37,20 @@
   <h4>O que nós oferecemos</h4>
   <br>
   <div class="row slideanim">
-    <div class="col-sm-4">
-      <span class="fas fa-power-off logo-small"></span>
-      <h4>POWER</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+    <div class="col-sm-4 zoom">
+      <span class="fas fa-map-marker-alt logo-small"></span>
+      <h4>COLETE</h4>
+      <p>Recolheremos e coletaremos todos os escombros de suas instalações, não importando o conteúdo dos escombros, teremos certeza de que serão removidos de sua propriedade.</p>
     </div>
-    <div class="col-sm-4">
-      <span class="fas fa-heart logo-small"></span>
-      <h4>LOVE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+    <div class="col-sm-4 zoom">
+      <span class="fas fa-eraser logo-small"></span>
+      <h4>REMOVER</h4>
+      <p>Nós removemos tudo e qualquer coisa, não espere que seus escombros sejam removidos. Ligue-nos para removermos seus escombros.</p>
     </div>
-    <div class="col-sm-4">
-      <span class="fas fa-lock logo-small"></span>
-      <h4>JOB DONE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-  </div>
-  <br><br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <span class="fas fa-leaf logo-small"></span>
-      <h4>GREEN</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="fas fa-certificate logo-small"></span>
-      <h4>CERTIFIED</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="fas fa-wrench logo-small"></span>
-      <h4 style="color:#303030;">HARD WORK</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+    <div class="col-sm-4 zoom">
+      <span class="fas fa-recycle logo-small"></span>
+      <h4>RECICLAR</h4>
+      <p>Levamos muito a sério o descarte de entulho, garantimos que o entulho seja entregue aos locais de despejo municipais.</p>
     </div>
   </div>
 </div>
@@ -134,6 +116,7 @@
      <span class="fas fa-angle-right" aria-hidden="true"></span>
   </a>
 </div>
+<div class="col-12"><hr class="vl" align="center" width="50%"></div></div>
 
 <div id="termo-de-contrato" class="container-fluid">
     {{-- <div class="text-center">
@@ -550,7 +533,7 @@
         }
     </script>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGgE7ZIGQRsrQf-AYfcCHaUj1ZN0w6l8s&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0gOBF1i9vAsXJF-KVVAQ9hJVNe3pSUFM&callback=initMap">
     </script>
 {{-- 
 <div class="container contentPos">
