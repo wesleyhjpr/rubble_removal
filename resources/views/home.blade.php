@@ -185,7 +185,7 @@
     <h2 class="text-center"><strong>Termo de prestação de serviços<strong></h2>
     <br>
     <!-- Nav tabs -->
-    <ul class="nav nav-tabs" role="tablist">
+    <ul class="nav nav-tabs slideanim" role="tablist">
         <li class="nav-item">
             <a class="nav-link active" data-toggle="tab" href="#menu0">Para contratação</a>
         </li>
@@ -204,7 +204,7 @@
     </ul>
 
     <!-- Tab panes -->
-    <div class="tab-content">
+    <div class="tab-content slideanim">
         <div id="menu0" class="container tab-pane active"><br>
             <h3>Para contratação Informe:</h3>
             <p>Nome completo ou Razão Social
