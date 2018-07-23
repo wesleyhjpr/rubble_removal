@@ -9,7 +9,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Pinheiros entulhos e móveis velhos') }}</title>
-    <link rel="icon" href="{{ asset('logo.png') }}">
+    <link rel="icon" href="{{ asset('_img/logo.svg') }}">
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>    
