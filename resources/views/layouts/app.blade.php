@@ -15,6 +15,16 @@
     <script src="{{ asset('js/app.js') }}" defer></script>    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122685903-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-122685903-1');
+    </script>
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
@@ -84,12 +94,12 @@
             padding: 60px 50px;
         }
         .logo-small {
-            color: MediumSeaGreen;
+            color: #349c62;
             font-size: 50px;
             padding-bottom: 10px;
         }
         .logo {
-            color: MediumSeaGreen;
+            color: #349c62;
             font-size: 200px;
         }
         @media screen and (max-width: 768px) {
@@ -250,6 +260,10 @@
           .nav-item a:hover{
             color: #2f8c57;
           }
+          .fas{
+            color: #349c62;
+          }
+         
     </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60"> 
@@ -306,7 +320,7 @@
          <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-md">
             <div class="container">
                 <a class="navbar-brand" style="padding-bottom: 0px; padding-top: 0px;"href={{Request::is('login')? '/' : '#myPage'}}>
-                    <img src="{{ asset('logo_1.svg') }}" alt="CTA Bagulhos" style=" height: 33px;">
+                    <img src="{{ asset('_img/logo_1.svg') }}" alt="CTA Bagulhos" style=" height: 33px;">
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
                         <span class="navbar-toggler-icon"></span>

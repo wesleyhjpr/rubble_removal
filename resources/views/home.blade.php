@@ -1,10 +1,40 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="jumbotron text-center bg-grey">
+{{-- <div class="jumbotron text-center bg-grey">
     <img class="img-responsive" src="{{ asset('logo.svg') }}" alt="CTA Bagulhos" style="width: 216px; height: 206px;">
     <h1>Pinheiros entulhos<br> cata bagulho e móveis</h1> 
-</div>
+</div> --}}
+<div id="demo" class="carousel slide text-center bg-grey" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="img-fluid" src="{{ asset('_img/carousel_1.jpeg') }}" alt="Los Angeles">
+      </div>
+      <div class="carousel-item">
+        <img class="img-fluid" src="{{ asset('_img/carousel_2.jpeg') }}" alt="Chicago">
+      </div>
+      <div class="carousel-item">
+        <img class="img-fluid" src="{{ asset('_img/carousel_3.jpeg') }}" alt="New York">
+      </div>
+    </div>
+    
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="fas fa-angle-left" aria-hidden="true"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="fas fa-angle-right" aria-hidden="true"></span>
+    </a>
+  </div>
 <div id="about" class="container-fluid">
     <div class="row">
         <div class="col-sm-8">
@@ -56,29 +86,29 @@
 </div>
 <div id="portfolio" class="container-fluid text-center bg-grey">
     <h2>Portfolio</h2>
-    <h4>O que nós criamos</h4>
+    <h4>O que nós <fa></fa>zemos</h4>
     <br>
     <div class="row text-center slideanim">
         <div class="col-md-4">
             <div class="card card-body">
-                <img src="https://www.w3schools.com/bootstrap/paris.jpg" alt="Paris">
-                <p><strong>Paris</strong>
+                <img src="{{ asset('_img/rubble.jpeg') }}" alt="Paris">
+                <p><strong>Lorem ipsum</strong>
                 </p>
                 <p>Yes, we built Paris</p>
             </div>
         </div>
         <div class="col-md-4">
             <div class="card card-body">
-                <img src="https://www.w3schools.com/bootstrap/newyork.jpg" alt="New York">
-                <p><strong>New York</strong>
+                <img src="{{ asset('_img/rubble(2).jpeg') }}" alt="New York">
+                <p><strong>Lorem ipsum</strong>
                 </p>
                 <p>We built New York</p>
             </div>
         </div>
         <div class="col-md-4">
             <div class="card card-body">
-                <img src="https://www.w3schools.com/bootstrap/sanfran.jpg" alt="San Francisco">
-                <p><strong>San Francisco</strong>
+                <img src="{{ asset('_img/rubble(4).jpeg') }}" alt="San Francisco">
+                <p><strong>Lorem ipsum</strong>
                 </p>
                 <p>Yes, San Fran is ours</p>
             </div>
