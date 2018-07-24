@@ -256,7 +256,7 @@
           }
           @media screen and (max-width: 480px) {
             .logo {
-                font-size: 150px;
+                font-size: 110px;
             }
           }
           .nav-item a {
@@ -270,6 +270,9 @@
           }
          .footer{
             background-color: #2d2d30;
+         }
+         .navbar-brand img{
+            filter: drop-shadow(0px 0px 3px #222);
          }
     </style>
 </head>
@@ -368,7 +371,7 @@
                 </div>
             </div>
         </nav>                  
-        <main class="py-4">
+        <main class="py-4" style="margin-top: 25px;">
             @yield('content')
         </main>   
         <footer class="container-fluid text-center">

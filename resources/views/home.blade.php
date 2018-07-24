@@ -12,19 +12,59 @@
       <li data-target="#demo" data-slide-to="0" class="active"></li>
       <li data-target="#demo" data-slide-to="1"></li>
       <li data-target="#demo" data-slide-to="2"></li>
+      <li data-target="#demo" data-slide-to="3"></li>
+      <li data-target="#demo" data-slide-to="4"></li>
+      <li data-target="#demo" data-slide-to="5"></li>
+      <li data-target="#demo" data-slide-to="6"></li>
+      <li data-target="#demo" data-slide-to="7"></li>
+      <li data-target="#demo" data-slide-to="8"></li>
+      <li data-target="#demo" data-slide-to="9"></li>
+      <li data-target="#demo" data-slide-to="10"></li>
+      <li data-target="#demo" data-slide-to="11"></li>
+      <li data-target="#demo" data-slide-to="12"></li>
     </ul>
     
     <!-- The slideshow -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="img-fluid" src="{{ asset('_img/carousel_1.jpeg') }}" alt="Los Angeles">
+        <img class="img-fluid" src="{{ asset('_img/carousel_1.jpg') }}" alt="Pinheiros cata entulhos">
       </div>
       <div class="carousel-item">
-        <img class="img-fluid" src="{{ asset('_img/carousel_2.png') }}" alt="Chicago">
+        <img class="img-fluid" src="{{ asset('_img/carousel_2.jpg') }}" alt="entulho limpo">
       </div>
       <div class="carousel-item">
-        <img class="img-fluid" src="{{ asset('_img/carousel_3.jpeg') }}" alt="New York">
+        <img class="img-fluid" src="{{ asset('_img/carousel_3.jpg') }}" alt="entulho papeis velhos">
       </div>
+      <div class="carousel-item">
+        <img class="img-fluid" src="{{ asset('_img/carousel_4.jpg') }}" alt="entulho pode de arvores">
+      </div>
+      <div class="carousel-item">
+        <img class="img-fluid" src="{{ asset('_img/carousel_5.jpg') }}" alt="entulho gesso">
+      </div> 
+      <div class="carousel-item">
+        <img class="img-fluid" src="{{ asset('_img/carousel_6.jpg') }}" alt="entulho madeira">
+      </div>
+      <div class="carousel-item">
+        <img class="img-fluid" src="{{ asset('_img/carousel_7.jpg') }}" alt="entulho moveis velhos">
+      </div>
+      <div class="carousel-item">
+        <img class="img-fluid" src="{{ asset('_img/carousel_8.jpg') }}" alt="entulho geladeira">
+      </div>
+      <div class="carousel-item">
+        <img class="img-fluid" src="{{ asset('_img/carousel_9.jpg') }}" alt="entulho fogão">
+      </div>
+      <div class="carousel-item">
+        <img class="img-fluid" src="{{ asset('_img/carousel_10.jpg') }}" alt="entulho metais">
+      </div>
+      <div class="carousel-item">
+        <img class="img-fluid" src="{{ asset('_img/carousel_11.jpg') }}" alt="entulho sofá">
+      </div>
+      <div class="carousel-item">
+        <img class="img-fluid" src="{{ asset('_img/carousel_12.jpg') }}" alt="entulho cata bagulho">
+      </div>
+      <div class="carousel-item">
+        <img class="img-fluid" src="{{ asset('_img/carousel_13.jpg') }}" alt="entulho 24 horas">
+      </div>     
     </div>
     
     <!-- Left and right controls -->
@@ -69,7 +109,7 @@
   <div class="row slideanim">
     <div class="col-sm-4 zoom">
       <span class="fas fa-map-marker-alt logo-small"></span>
-      <h4>COLETE</h4>
+      <h4>COLETA</h4>
       <p>Recolheremos e coletaremos todos os escombros de suas instalações, não importando o conteúdo dos escombros, teremos certeza de que serão removidos de sua propriedade.</p>
     </div>
     <div class="col-sm-4 zoom">
@@ -91,26 +131,26 @@
     <div class="row text-center slideanim">
         <div class="col-md-4">
             <div class="card card-body">
-                <img src="{{ asset('_img/rubble.jpeg') }}" alt="Paris">
-                <p><strong>Lorem ipsum</strong>
+                <img src="{{ asset('_img/movel_velho.jpg') }}" alt="Gesso">
+               {{--  <p><strong>Lorem ipsum</strong>
                 </p>
-                <p>Yes, we built Paris</p>
+                <p>Yes, we built Paris</p> --}}
             </div>
         </div>
         <div class="col-md-4">
             <div class="card card-body">
-                <img src="{{ asset('_img/rubble(2).jpeg') }}" alt="New York">
-                <p><strong>Lorem ipsum</strong>
+                <img src="{{ asset('_img/fogao_velho.jpg') }}" alt="entulhos de gesso">
+                {{-- <p><strong>Lorem ipsum</strong>
                 </p>
-                <p>We built New York</p>
+                <p>We built New York</p> --}}
             </div>
         </div>
         <div class="col-md-4">
             <div class="card card-body">
-                <img src="{{ asset('_img/rubble(4).jpeg') }}" alt="San Francisco">
-                <p><strong>Lorem ipsum</strong>
+                <img src="{{ asset('_img/rubble(4).jpeg') }}" alt="saco de entulho">
+                {{-- <p><strong>Lorem ipsum</strong>
                 </p>
-                <p>Yes, San Fran is ours</p>
+                <p>Yes, San Fran is ours</p> --}}
             </div>
         </div>
     </div>
@@ -128,13 +168,13 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
-        <h4>"Essa empresa é a melhor. Eu estou muito satisfeito com o resultado!"<br><span style="font-style:normal;">Michael Roe, Vice President, Comment Box</span></h4>
+        <h4>"Essa empresa é a melhor. Eu estou muito satisfeito com o resultado!"<br><span style="font-style:normal;">Juliana Lopes.</span></h4>
     </div>
     <div class="carousel-item">
-      <h4>"Uma única palavra... WOW!!"<br><span style="font-style:normal;">John Doe, Salesman, Rep Inc</span></h4>
+      <h4>"Uma única palavra... WOW!!"<br><span style="font-style:normal;">João Soares.</span></h4>
     </div>
     <div class="carousel-item">
-      <h4>"Eu poderia ... ser mais feliz com esta empresa?"<br><span style="font-style:normal;">Chandler Bing, Actor, FriendsAlot</span></h4>
+      <h4>"Ótimo serviço prestado!"<br><span style="font-style:normal;">Bruno Silva.</span></h4>
     </div>
   </div>
 
@@ -291,8 +331,10 @@
         <div id="menu4" class="container tab-pane fade"><br>
             <h3>Preço dos serviços:</h3>
             <p>
-                Serviço mínimo no térreo até 20 m sem obstáculo (10 sacos ou equivalente).&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;- R$ 110,00
-                <br>Serviço mínimo em apto com elevador e o nosso veículo parando próximo do elevador&emsp;&emsp;&emsp;&emsp;- R$ 140,00
+                 Serviço mínimo no térreo até 20 m sem obstáculo (10 sacos ou equivalente).&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;- R$ 110,00
+                 <br><br>Preços custo benefício do mercado
+                 <br>Estamos a disposição para negociar!
+                {{--<br>Serviço mínimo em apto com elevador e o nosso veículo parando próximo do elevador&emsp;&emsp;&emsp;&emsp;- R$ 140,00
                 <br>
                 <br>Taxa de deslocamento do veículo (contratação) até 49 sacos &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;- R$ 40,00
                 <br>Obs: Nos múltiplos de 50 sacos não será cobrada a taxa de deslocamento
@@ -307,7 +349,7 @@
                 <br>
                 <br>Preços a acrescentar a remoção:
                 <br>
-                Material Poluentes (classe 3, causam mau a saúde) acrescentar a remoção
+                Material Poluentes (classe 3, causam mau a saúde) acrescentar a remoção --}}
             </p>
         </div>
     </div>
