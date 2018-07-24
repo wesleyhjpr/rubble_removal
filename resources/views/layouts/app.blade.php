@@ -93,7 +93,7 @@
             color: MediumSeaGreen;
         }
         .bg-grey {
-            background-color: #f6f6f6;
+            background-color: #ececec;
         }
         .container-fluid {
             padding: 60px 50px;
