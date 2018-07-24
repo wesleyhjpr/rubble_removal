@@ -4,12 +4,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="geo.region" content="BR-SP" />
+    <meta name="geo.placename" content="Pinheiros" />
+    <meta name="geo.position" content="-23.560573;-46.679993" />
+    <meta name="ICBM" content="-23.560573, -46.679993" />                           
+
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Pinheiros entulhos e móveis velhos') }}</title>
-    <link rel="icon" href="{{ asset('_img/logo.svg') }}">
+    <title>{{ config('app.name', 'Pinheiros entulhos e móveis velhos TEL:96120 0106 | 95215 5204') }}</title>
+    <link rel="icon" href="{{ asset('_img/logoFinal.png') }}">
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>    
@@ -263,7 +268,9 @@
           .fas{
             color: #349c62;
           }
-         
+         .footer{
+            background-color: #2d2d30;
+         }
     </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60"> 
@@ -382,7 +389,7 @@
                 });
             }
             @if (!Request::is('login'))
-            $('.navbar-brand img').hide(); 
+            {{-- $('.navbar-brand img').hide(); 
             $(document).scroll(function () {
                 var y = $(this).scrollTop();
                 console.log("position: ", y);
@@ -394,7 +401,7 @@
                 }else if(y > 332){
                     $('.navbar-brand img').show();
                 }
-            });
+            }); --}}
                 $(document).ready(function(){                         
                     // Add smooth scrolling to all links in navbar + footer link                    
                     $(".navbar a, footer a[href='#myPage']").on('click', function(event) {

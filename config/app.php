@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Pinheiros entulhos e móveis velhos'),
+    'name' => env('APP_NAME', 'Pinheiros entulhos e móveis velhos TEL:96120 0106 | 95215 5204'),
 
     /*
     |--------------------------------------------------------------------------

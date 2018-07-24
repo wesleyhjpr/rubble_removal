@@ -20,7 +20,7 @@
         <img class="img-fluid" src="{{ asset('_img/carousel_1.jpeg') }}" alt="Los Angeles">
       </div>
       <div class="carousel-item">
-        <img class="img-fluid" src="{{ asset('_img/carousel_2.jpeg') }}" alt="Chicago">
+        <img class="img-fluid" src="{{ asset('_img/carousel_2.png') }}" alt="Chicago">
       </div>
       <div class="carousel-item">
         <img class="img-fluid" src="{{ asset('_img/carousel_3.jpeg') }}" alt="New York">
@@ -86,7 +86,7 @@
 </div>
 <div id="portfolio" class="container-fluid text-center bg-grey">
     <h2>Portfolio</h2>
-    <h4>O que nós <fa></fa>zemos</h4>
+    <h4>O que nós fazemos</h4>
     <br>
     <div class="row text-center slideanim">
         <div class="col-md-4">
