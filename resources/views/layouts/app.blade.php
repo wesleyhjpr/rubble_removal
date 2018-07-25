@@ -329,7 +329,7 @@
          comment --}}
          <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-md">
             <div class="container">
-                <a class="navbar-brand" style="padding-bottom: 0px; padding-top: 0px;"href={{Request::is('login')? '/' : '#myPage'}}>
+                <a class="navbar-brand" style="padding-bottom: 0px; padding-top: 0px;"href=@if (Request::is('login') || Request::is('clientes')) {{'/'}} @else {{'#myPage'}} @endif>
                     <img src="{{ asset('_img/logo_1.svg') }}" alt="CTA Bagulhos" style=" height: 33px;">
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
@@ -337,12 +337,12 @@
                  </button> 
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href={{Request::is('login')? '/#about' : '#about'}} class="nav-link">SOBRE</a></li>
-                        <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href={{Request::is('login')? '/#services' : '#services'}} class="nav-link">SERVIÇOS</a></li>
-                        <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href={{Request::is('login')? '/#portfolio' : '#portfolio'}} class="nav-link">PORTFOLIO</a></li>
-                        <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href={{Request::is('login')? '/#termo-de-contrato' : '#termo-de-contrato'}} class="nav-link">TERMO DE CONTRATO</a></li>
-                        <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href={{Request::is('login')? '/#contact' : '#contact'}} class="nav-link">CONTATO</a></li>
+                    <ul class="navbar-nav ml-auto">                        
+                        <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href=@if (Request::is('login') || Request::is('clientes')) {{'/#about'}} @else {{'#about'}} @endif class="nav-link">SOBRE</a></li>
+                        <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href=@if (Request::is('login') || Request::is('clientes')) {{'/#services'}} @else {{'#services'}} @endif class="nav-link">SERVIÇOS</a></li>
+                        <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href=@if (Request::is('login') || Request::is('clientes')) {{'/#portfolio'}} @else {{'#portfolio'}} @endif class="nav-link">PORTFOLIO</a></li>
+                        <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href=@if (Request::is('login') || Request::is('clientes')) {{'/#termo-de-contrato'}} @else {{'#termo-de-contrato'}} @endif class="nav-link">TERMO DE CONTRATO</a></li>
+                        <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href=@if (Request::is('login') || Request::is('clientes')) {{'/#contact'}} @else {{'#contact'}} @endif class="nav-link">CONTATO</a></li>
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
@@ -378,8 +378,8 @@
             <a href="#myPage" title="Para o Topo">
               <span class="fa fa-angle-up"></span>
             </a>
-            <p>Todos os direitos reservados.</p>
-        </footer>
+            <p>Todos os direitos reservados Pinheiros entulhos. desenvolvido por <a href="https://www.linkedin.com/in/wesley-pereira-140a81107/" title="Visite a página do linkedin">WesleyHjpr.</a></p>
+        </footer>        
         <script>
             function slideLogo(){
                 $(".slideanim").each(function(){
@@ -391,20 +391,7 @@
                     }
                 });
             }
-            @if (!Request::is('login'))
-            {{-- $('.navbar-brand img').hide(); 
-            $(document).scroll(function () {
-                var y = $(this).scrollTop();
-                console.log("position: ", y);
-                if(y < 376){
-                    $('.navbar-brand img').hide();
-                }
-                if(y > 377){
-                    $('.navbar-brand img').show();
-                }else if(y > 332){
-                    $('.navbar-brand img').show();
-                }
-            }); --}}
+            function Ontop(){
                 $(document).ready(function(){                         
                     // Add smooth scrolling to all links in navbar + footer link                    
                     $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
@@ -433,7 +420,8 @@
                         slideLogo();
                     });
                     })
-                @endif
+            }
+            @if (Request::is('login') || Request::is('clientes'))  @else Ontop(); @endif
         </script>    
     </div>
     

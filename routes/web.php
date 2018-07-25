@@ -15,9 +15,15 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('clientes', 'ClientesController@index');
+Route::post('/salvar', 'ClientesController@salvar');
+Route::delete('clientes/{cliente}', 'ClientesController@deletar');
 Auth::routes();
 
 Route::match(['get', 'post'], 'register', function(){
+    return redirect('/');
+});
+Route::match(['get'], 'salvar', function(){
     return redirect('/');
 });
 

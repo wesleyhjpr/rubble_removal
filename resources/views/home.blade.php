@@ -365,20 +365,32 @@
             <p><span class="fas fa-envelope"></span> pinheirosentulhos@gmail.com</p> 
         </div>
         <div class="col-sm-7 slideanim">
+            {!! Form::open(['url' => '/salvar']) !!}
             <div class="row">
                 <div class="col-sm-6 form-group">
-                    <input class="form-control" id="name" name="name" placeholder="Nome" type="text" required>
+                    {!! Form::text('nome', null, ['class' => 'form-control', 'placeholder' => 'Nome', 'id' => 'nome', 'required'])!!}
                 </div>
-                <div class="col-sm-6 form-group">
-                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                <div class="col-sm-6 form-group">                 
+                    {!! Form::email('email', null, ['class' => 'form-control', 'placeholder' => 'E-mail', 'id' => 'email', 'required']) !!}                    
+                </div>
+            </div>            
+            {!! Form::textarea('comentario', null, ['class' => 'form-control', 'placeholder' => 'Comentário', 'id' => 'comentario', 'rows' => '5', 'required']) !!}<br>            
+            <div class="row">
+                <div class="col-sm-12 form-group"> 
+                    {!! Form::submit('Enviar', ['class' => 'btn btn-default pull-right']) !!}
                 </div>
             </div>
-            <textarea class="form-control" id="comments" name="comments" placeholder="Comentário" rows="5"></textarea><br>
-            <div class="row">
-                <div class="col-sm-12 form-group">
-                    <button class="btn btn-default pull-right" type="submit">Enviar</button>
-                </div>
-            </div> 
+            {!! Form::close() !!}
+            <script>
+                    $( document ).ready(function() {
+                        $(".alert").fadeTo(3500, 500).slideUp(500, function(){
+                        $(".alert").slideUp(500);
+                        });
+                    });                   
+            </script>
+                @if(Session::has('mensagem_sucesso'))
+                    <div  class="alert alert-success">{{Session::get('mensagem_sucesso')}}</div>
+                @endif 
         </div>
     </div>
 </div>
