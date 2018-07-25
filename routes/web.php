@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('clientes', 'ClientesController@index');
+
 Route::post('/salvar', 'ClientesController@salvar');
 Route::delete('clientes/{cliente}', 'ClientesController@deletar');
 Auth::routes();
@@ -25,6 +25,9 @@ Route::match(['get', 'post'], 'register', function(){
 });
 Route::match(['get'], 'salvar', function(){
     return redirect('/');
+});
+Route::group(['middleware' => ['auth']], function() {
+    Route::get('clientes', 'ClientesController@index');
 });
 
 Route::get('/home', 'HomeController@index')->name('home');
