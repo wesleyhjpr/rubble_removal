@@ -380,7 +380,7 @@
             <a href="#myPage" title="Para o Topo">
               <span class="fa fa-angle-up"></span>
             </a>
-            <p>Todos os direitos reservados Pinheiros entulhos. desenvolvido por <a href="https://www.linkedin.com/in/wesley-pereira-140a81107/" title="Visite a página do linkedin">WesleyHjpr.</a></p>
+            <p>© 2018 Todos os direitos reservados. desenvolvido por <a href="https://www.linkedin.com/in/wesley-pereira-140a81107/" title="Visite a página do linkedin">WesleyHjpr.</a></p>
         </footer>        
         <script>
             function slideLogo(){
