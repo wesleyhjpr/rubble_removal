@@ -9,7 +9,7 @@
                     Clientes                    
                 </div>
                 
-                <div class="card-body">
+                <div class="card-body table-responsive">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
@@ -25,7 +25,7 @@
                         @if(Session::has('mensagem_sucesso'))
                             <div  class="alert alert-success">{{Session::get('mensagem_sucesso')}}</div>
                         @endif
-                    <table class="table">
+                    <table class="table table-hover">
                         <th>Nome</th>
                         <th>E-mail</th>
                         <th>Comentário</th>
