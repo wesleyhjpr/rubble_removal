@@ -338,11 +338,11 @@
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">                        
-                        <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href=@if (Request::is('login') || Request::is('clientes')) {{'/#about'}} @else {{'#about'}} @endif class="nav-link">SOBRE</a></li>
-                        <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href=@if (Request::is('login') || Request::is('clientes')) {{'/#services'}} @else {{'#services'}} @endif class="nav-link">SERVIÇOS</a></li>
+                        <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href=@if (Request::is('login') || Request::is('clientes')) {{'/#sobre-a-pinheiros-remocao-de-entulhos-e-moveis-velhos'}} @else {{'#sobre-a-pinheiros-remocao-de-entulhos-e-moveis-velhos'}} @endif class="nav-link">SOBRE</a></li>
+                        <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href=@if (Request::is('login') || Request::is('clientes')) {{'/#servicos-de-remocao-de-entulhos-e-moveis-velhos'}} @else {{'#servicos-de-remocao-de-entulhos-e-moveis-velhos'}} @endif class="nav-link">SERVIÇOS</a></li>
                         <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href=@if (Request::is('login') || Request::is('clientes')) {{'/#portfolio'}} @else {{'#portfolio'}} @endif class="nav-link">PORTFOLIO</a></li>
-                        <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href=@if (Request::is('login') || Request::is('clientes')) {{'/#termo-de-contrato'}} @else {{'#termo-de-contrato'}} @endif class="nav-link">TERMO DE CONTRATO</a></li>
-                        <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href=@if (Request::is('login') || Request::is('clientes')) {{'/#contact'}} @else {{'#contact'}} @endif class="nav-link">CONTATO</a></li>
+                        <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href=@if (Request::is('login') || Request::is('clientes')) {{'/#termo-de-contrato-remocao-de-entulhos-e-moveis-velhos'}} @else {{'#termo-de-contrato-remocao-de-entulhos-e-moveis-velhos'}} @endif class="nav-link">TERMO DE CONTRATO</a></li>
+                        <li class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show"><a href=@if (Request::is('login') || Request::is('clientes')) {{'/#contato-pinheiros-remocao-de-entulhos-e-moveis-velhos'}} @else {{'#contato-pinheiros-remocao-de-entulhos-e-moveis-velhos'}} @endif class="nav-link">CONTATO</a></li>
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>

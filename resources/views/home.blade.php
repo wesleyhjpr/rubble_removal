@@ -30,7 +30,7 @@
         <img class="img-fluid" src="{{ asset('_img/carousel_1.jpg') }}" alt="Pinheiros cata entulhos">
       </div>
       <div class="carousel-item">
-        <img class="img-fluid" src="{{ asset('_img/carousel_2.jpg') }}" alt="entulho limpo">
+        <img class="img-fluid" src="{{ asset('_img/carousel_12.jpg') }}" alt="entulho cata bagulho">
       </div>
       <div class="carousel-item">
         <img class="img-fluid" src="{{ asset('_img/carousel_3.jpg') }}" alt="entulho papeis velhos">
@@ -60,7 +60,7 @@
         <img class="img-fluid" src="{{ asset('_img/carousel_11.jpg') }}" alt="entulho sofá">
       </div>
       <div class="carousel-item">
-        <img class="img-fluid" src="{{ asset('_img/carousel_12.jpg') }}" alt="entulho cata bagulho">
+        <img class="img-fluid" src="{{ asset('_img/carousel_2.jpg') }}" alt="entulho limpo">
       </div>
       <div class="carousel-item">
         <img class="img-fluid" src="{{ asset('_img/carousel_13.jpg') }}" alt="entulho 24 horas">
@@ -75,11 +75,20 @@
         <span class="fas fa-angle-right" aria-hidden="true"></span>
     </a>
   </div>
-<div id="about" class="container-fluid">
+<div id="sobre-a-pinheiros-remocao-de-entulhos-e-moveis-velhos" class="container-fluid">
     <div class="row">
         <div class="col-sm-8">
             <h2>Sobre a página da empresa</h2>
-            <p>Bem-vindo aos serviços da CTA Bagulhos! Somos uma empresa de remoção de entulho e sucata premium e com boa relação custo-benefício. Não há nada que não possamos cuidar de nossos clientes.</p> 
+            <p>Bem vindo a nossa página estamos aqui oferecendo um serviço de qualidade a mais de um ano no mercado, trabalhamos com seriedade e profissionalismo no mercado para resolver sua nessecidade e dar um destino certo com melhor custo benefício do mercado.
+                <br><br><strong>Nossas especialidades</strong>
+                <br>Cata bagulhos 
+                <br>Entulhos limpos 
+                <br>Gesso
+                <br>Poda de árvores e troncos
+                <br>Ferro velhos metais
+                <br>Móveis velhos em geral
+                <br>Livros ,papais , papelão
+                <br><br>E o que mas você tiver que não é de serventia e esteja acumulando sujeira e criando bichos.</p> 
             {{-- <p>Lorem ipsum..</p>
             <button class="btn btn-default btn-lg">Get in Touch</button>
             --}}
@@ -102,7 +111,7 @@
     </div>
 </div>
 <!-- Container (Services Section) -->
-<div id="services" class="container-fluid text-center">
+<div id="servicos-de-remocao-de-entulhos-e-moveis-velhos" class="container-fluid text-center">
   <h2>SERVIÇOS</h2>
   <h4>O que nós oferecemos</h4>
   <br>
@@ -110,7 +119,7 @@
     <div class="col-sm-4 zoom">
       <span class="fas fa-map-marker-alt logo-small"></span>
       <h4>COLETA</h4>
-      <p>Recolheremos e coletaremos todos os escombros de suas instalações, não importando o conteúdo dos escombros, teremos certeza de que serão removidos de sua propriedade.</p>
+      <p>Temos várias equipes várias  especializada para melhor atendê-los em sua residência, condomínio, empresa, casa de campo e etc... Seja lá onde for estaremos a sua disposição!</p>
     </div>
     <div class="col-sm-4 zoom">
       <span class="fas fa-eraser logo-small"></span>
@@ -188,7 +197,7 @@
 </div>
 <div class="col-12"><hr class="vl" align="center" width="50%"></div></div>
 
-<div id="termo-de-contrato" class="container-fluid">
+<div id="termo-de-contrato-remocao-de-entulhos-e-moveis-velhos" class="container-fluid">
     {{-- <div class="text-center">
         <h2>Preços</h2>
         <h4>Escolha um plano de pagamento que funcione para você</h4>
@@ -331,9 +340,9 @@
         <div id="menu4" class="container tab-pane fade"><br>
             <h3>Preço dos serviços:</h3>
             <p>
-                 Serviço mínimo no térreo até 20 m sem obstáculo (10 sacos ou equivalente).&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;- R$ 110,00
-                 <br><br>Preços custo benefício do mercado
-                 <br>Estamos a disposição para negociar!
+                Nós estamos com o melhor custo benefício do mercado até o final do ano para você que está reformando ou construindo sua casa, apartamento, ou sua empresa.
+                <br>Entre em contato com nossa equipe e vamos fazer um bom negócio para ambos os lados.
+                <br><br><h4>obrigado!</h4>
                 {{--<br>Serviço mínimo em apto com elevador e o nosso veículo parando próximo do elevador&emsp;&emsp;&emsp;&emsp;- R$ 140,00
                 <br>
                 <br>Taxa de deslocamento do veículo (contratação) até 49 sacos &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;- R$ 40,00
@@ -355,7 +364,7 @@
     </div>
 </div>
 
-<div id="contact" class="container-fluid bg-grey">
+<div id="contato-pinheiros-remocao-de-entulhos-e-moveis-velhos" class="container-fluid bg-grey">
     <h2 class="text-center">CONTATO</h2>
     <div class="row">
         <div class="col-sm-5">
