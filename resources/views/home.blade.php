@@ -87,7 +87,7 @@
                 <br>Poda de árvores e troncos
                 <br>Ferro velhos metais
                 <br>Móveis velhos em geral
-                <br>Livros ,papais , papelão
+                <br>Livros, papeis, papelão
                 <br><br>E o que mas você tiver que não é de serventia e esteja acumulando sujeira e criando bichos.</p> 
             {{-- <p>Lorem ipsum..</p>
             <button class="btn btn-default btn-lg">Get in Touch</button>
