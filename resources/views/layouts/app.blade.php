@@ -8,7 +8,7 @@
     <meta name="geo.placename" content="Pinheiros" />
     <meta name="geo.position" content="-23.560573;-46.679993" />
     <meta name="ICBM" content="-23.560573, -46.679993" />                           
-    <meta name="description" content="Somo especialistas em remoção de entulhos, cata bagulho, móveis velhos,  poda de arvore e removemos também lixo eletrônico entre outros. tudo isso de forma ecológica.">
+    <meta name="description" content="Somos especialistas em remoção de entulhos, cata bagulho, móveis velhos,  poda de arvore e removemos também lixo eletrônico entre outros. tudo isso de forma ecológica.">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
