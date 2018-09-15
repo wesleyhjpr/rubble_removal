@@ -13,7 +13,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Pinheiros entulhos e móveis velhos TEL:96120 0106 | 95215 5204') }}</title>
+    <title>{{ config('app.name', 'RETIRADA DE ENTULHOS - PINHEIROS ENTULHOS') }}</title>
     <link rel="icon" href="{{ asset('_img/logoFinal.png') }}">
 
     <!-- Scripts -->
