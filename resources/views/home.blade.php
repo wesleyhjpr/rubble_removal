@@ -78,17 +78,18 @@
 <div id="sobre-a-pinheiros-remocao-de-entulhos-e-moveis-velhos" class="container-fluid">
     <div class="row">
         <div class="col-sm-8">
-            <h2>Sobre a página da empresa</h2>
-            <p>Bem vindo a nossa página estamos aqui oferecendo um serviço de qualidade a mais de um ano no mercado, trabalhamos com seriedade e profissionalismo no mercado para resolver sua nessecidade e dar um destino certo com melhor custo benefício do mercado.
-                <br><br><strong>Nossas especialidades</strong>
-                <br>Cata bagulhos 
-                <br>Entulhos limpos 
-                <br>Gesso
-                <br>Poda de árvores e troncos
-                <br>Ferro velhos metais
-                <br>Móveis velhos em geral
-                <br>Livros, papeis, papelão
-                <br><br>E o que mas você tiver que não é de serventia e esteja acumulando sujeira e criando bichos.</p> 
+            <h2>Sobre a empresa</h2>
+            <p>Olá, bem vindo a Pinheiros Entulhos. Somos uma empresa no qual oferecemos um serviço especializado em <b>retirada de entulho</b> e <b>Descarte de móveis usados</b> com o menor custo beneficio. Estando a mais de um ano no mercado a Pinheiros Entulhos realiza a <b>retirada de entulhos</b> e <b>retirada móveis velhos</b>, oferecendo um serviço de qualidade e comprometimento com nossos clientes.
+                <br><br><strong>Trabalhamos com os serviços tais como:</strong>
+                <br>Descarte de moveis usados
+                <br>Remoção de entulhos
+                <br>Retirada de Gesso
+                <br>Retirada de entulhos em geral
+                <br>Pode de árvores e troncos
+                <br>Retirada de metais
+                <br>Retirada de ferro velho
+                <br>Retirada de papelão.
+                <br><br>Tudo o que não for de sua serventia e esteja acumulando sujeira, nós fazemos a <b>remoção</b>!</p> 
             {{-- <p>Lorem ipsum..</p>
             <button class="btn btn-default btn-lg">Get in Touch</button>
             --}}
@@ -105,8 +106,10 @@
             <span class="fas fa-recycle logo slideanim"></span> 
         </div>
         <div class="col-sm-8">
-            <h2>Removendo seus entulhos do jeito certo</h2>
-            <p>Nossa equipe de especialistas que cuida dos nossos serviços de remoção de entulho é a solução perfeita para garantir que qualquer tipo de entulho seja descartado de acordo com as diretrizes recomendadas pela legislação. Nós sempre entregamos seus resíduos em locais de despejos legais e de acordo com as leis antidumping. Recolhemos todas as formas de construção e entulho de edifícios, resíduos de jardim, resíduos comerciais e domésticos, bem como todos os resíduos domésticos e móveis. </p> 
+            <h2>Retirada de entulhos do jeito certo</h2>
+            <p>Nossa equipe especialista em <b>remoção de entulhos</b> é a solução perfeita para garntir que, qualquer tipo de <b>entulho</b> seja descartado da maneira correta para preservação do meio ambiente de acordo com as diretrizes da legislação.
+                A entrega dos residuos é feita em locais de despejos legais de acordo com as leis antidumping, no qual se enquadra o descarte legal de <b>entulhos</b>.
+                A <b>retirada de entulhos</b> é feita a partir de construções onde se tem <b>entulhos</b> de edificios, residuos de jardins, residuos comerciais e domesticos, e também, realizamos o <b>descarte de móveis</b> usados ou que não é de sua serventia.</p> 
         </div>
     </div>
 </div>
