@@ -386,7 +386,7 @@
                     {!! Form::email('email', null, ['class' => 'form-control', 'placeholder' => 'E-mail', 'id' => 'email', 'required']) !!}                    
                 </div>
             </div>            
-            {!! Form::textarea('comentario', null, ['class' => 'form-control', 'placeholder' => 'Comentário', 'id' => 'comentario', 'rows' => '5', 'required']) !!}<br>            
+            {!! Form::textarea('comentario', null, ['class' => 'form-control', 'placeholder' => 'Comentário - Por favor colocar número de telefone.', 'id' => 'comentario', 'rows' => '5', 'required']) !!}<br>            
             <div class="row">
                 <div class="col-sm-12 form-group"> 
                     {!! Form::submit('Enviar', ['class' => 'btn btn-default pull-right']) !!}
