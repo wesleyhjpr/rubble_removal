@@ -373,7 +373,7 @@
         <div class="col-sm-5">
             <p>Contacte-nos e vamos retornar para você dentro de 24 horas.</p>
             <p><span class="fas fa-map-marked-alt"></span> R. Paulo Gontijo de Carvalho, 452 - Cerqueira César, São Paulo - SP, 05404-020</p>
-            <p><span class="fas fa-mobile-alt"></span> 11 96120 0106 | 95215 5204</p>
+            <p><span class="fas fa-mobile-alt"></span> 11 <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5511961200106">96120 0106</a> | <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5511952155204">95215 5204</a></p>
             <p><span class="fas fa-envelope"></span> pinheirosentulhos@gmail.com</p> 
         </div>
         <div class="col-sm-7 slideanim">

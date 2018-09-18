@@ -34,7 +34,7 @@
                             @foreach ($clientes as $cliente)
                             <tr>
                                 <td>{{ $cliente->nome }}</td>
-                                <td>{{ $cliente->email }}</td>
+                                <td><a href="mailto:{{ $cliente->email }}?subject=RETIRADA%20DE%20ENTULHOS%20-%20PINHEIROS%20ENTULHOS&amp;body=Olá%20{{ $cliente->nome }}.%0D%0A%0D%0AReferente%20ao%20seu%20contato%20pelo%20site.%0D%0A%0D%0A--------------%0D%0A{{ $cliente->comentario }}%0D%0A--------------%0D%0A%0D%0A">{{ $cliente->email }}</a></td>
                                 <td>{{ $cliente->comentario }}</td>
                                 <td>
                                     
